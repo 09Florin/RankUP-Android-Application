@@ -1,0 +1,3 @@
+Enable Unknown Sources:
+Go to Settings > Security.
+Find and enable Install unknown apps or Allow from this source for the browser or file manager app they’re using to download the APK.

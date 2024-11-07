@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.YourApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary color applied across the app -->
+        <item name="colorPrimary">@color/pw</item>
+        <item name="colorPrimaryVariant">@color/pw</item>
+        <item name="colorOnPrimary">#0F0E0E</item> <!-- Text color on primary, usually white -->
+
+        <!-- Secondary color used for accent elements -->
+        <item name="colorSecondary">@color/pw</item>
+        <item name="colorSecondaryVariant">@color/pw</item>
+        <item name="colorOnSecondary">#0F0E0E</item> <!-- Text color on secondary, usually white -->
+
+        <!-- Background color, optional: use `pw` if you want a consistent background color -->
+        <item name="android:colorBackground">@color/black</item>
+    </style>
+</resources>

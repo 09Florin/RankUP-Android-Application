@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnAddPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Player"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnRemovePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Player" />
+
+    <TextView
+        android:id="@+id/tvRankPeriods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="Rank-up Periods Configuration" />
+
+    <!-- Configurable rank-up period fields for ranks 2 to 5 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rank 2:" />
+
+        <EditText
+            android:id="@+id/etRank2Days"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="Enter days" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="150dp"
+            android:text="days" />
+
+        <TextView
+            android:id="@+id/tvCurrentRank2Days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0 days)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rank 3:" />
+
+        <EditText
+            android:id="@+id/etRank3Days"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="Enter days" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="150dp"
+            android:text="days" />
+
+        <TextView
+            android:id="@+id/tvCurrentRank3Days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0 days)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rank 4:" />
+
+        <EditText
+            android:id="@+id/etRank4Days"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="Enter days" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="150dp"
+            android:text="days" />
+
+        <TextView
+            android:id="@+id/tvCurrentRank4Days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0 days)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rank 5:" />
+
+        <EditText
+            android:id="@+id/etRank5Days"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="Enter days" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="150dp"
+            android:text="days" />
+
+        <TextView
+            android:id="@+id/tvCurrentRank5Days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0 days)" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveRankPeriods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Rank Up Changes"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clan Members:"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- RecyclerView to display the players -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPlayers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
+
